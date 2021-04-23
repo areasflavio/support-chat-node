@@ -20,6 +20,10 @@ app.get('/pages/client', (request, response) => {
   return response.render('client');
 });
 
+app.get('/pages/admin', (request, response) => {
+  return response.render('admin');
+});
+
 const http = createServer(app);
 
 const io = new Server(http);
